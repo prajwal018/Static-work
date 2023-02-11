@@ -1,0 +1,263 @@
+/*  */
+/* nav {
+	/* background-color: #181823; */
+/* color: #537fe7; */
+/* } */
+a .nav-link {
+	color: #537fe7;
+}
+input.form-control {
+	background-color: #c0eef2;
+	border-color: #537fe7;
+	color: #181823;
+}
+/*  */
+.navbar-brand {
+	color: #c0eef2;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+/* NAVBAR CSS */
+
+.body {
+	background-color: #c0eef2;
+}
+/* BODY CSS */
+
+#define {
+	position: relative;
+	text-align: center;
+}
+
+#define img {
+	width: 100%;
+	height: 50rem;
+}
+
+#define .image-overlay {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+	padding: 20px;
+	color: #c0eef2;
+	text-align: center;
+}
+
+#define h3 {
+	color: #537fe7;
+	margin-bottom: 20px;
+}
+
+#define button {
+	background-color: #181823;
+	color: #e9f8f9;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+/* DEFINE CSS */
+#about {
+	text-align: center;
+	background-color: #181823;
+	padding: 50px;
+}
+
+#about img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-bottom: 50px;
+}
+
+#about h2 {
+	color: #537fe7;
+	margin-bottom: 20px;
+}
+
+#about p {
+	color: #e9f8f9;
+	font-size: 16px;
+}
+/* ABOUT CSS */
+#services {
+	background-color: #181823;
+	color: #c0eef2;
+	padding: 50px 0;
+	display: flex;
+}
+
+.card {
+	background-color: #e9f8f9;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px #537fe7;
+	text-align: center;
+	padding: 30px;
+	margin: 20px;
+}
+
+.card-title {
+	color: #537fe7;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.card-text {
+	color: #181823;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.btn-primary {
+	background-color: #537fe7;
+	border-radius: 20px;
+	color: #c0eef2;
+	padding: 10px 20px;
+	text-decoration: none;
+	border: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+	background-color: #c0eef2;
+	color: #537fe7;
+	cursor: pointer;
+}
+/* SERVICES CSS */
+#projects {
+	background-color: #181823;
+	color: #c0eef2;
+	align-items: center;
+	text-align: center;
+}
+.carousel {
+	height: 50rem;
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #181823;
+	display: flex;
+	vertical-align: middle;
+}
+.carousel-control-prev,
+.carousel-control-next {
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 10px;
+	color: #181823;
+	font-size: 18px;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-item {
+	height: 350px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	background-color: #537fe7;
+	color: #181823;
+}
+.carousel-caption d-none d-md-block {
+	color: #181823;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+	visibility: initial;
+	opacity: 50%;
+	cursor: pointer;
+	color: #c0eef2;
+	background-color: #181823;
+}
+
+.carousel-indicators {
+	bottom: 10px;
+}
+
+.carousel-indicators li {
+	background-color: #c0eef2;
+	border-color: #537fe7;
+}
+
+.carousel-indicators .active {
+	background-color: #537fe7;
+}
+
+/* PROJECT CSS */
+#contact {
+	background-color: #181823;
+	padding: 50px;
+	color: #537fe7;
+	align-items: center;
+	text-align: center;
+	position: relative;
+}
+
+#contact h2 {
+	color: #537fe7;
+	width: 100%;
+	height: fit-content;
+	margin-bottom: 40px;
+}
+
+#contact form {
+	background-color: #181823;
+	width: 50%;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #537fe7;
+	text-align: left;
+}
+
+#contact label,
+#contact input[type='text'],
+#contact input[type='email'],
+#contact textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #c0eef2;
+	border: 1px solid #537fe7;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+#contact input[type='submit'] {
+	width: 100%;
+	padding: 15px;
+	background-color: #537fe7;
+	color: #e9f8f9;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#contact input[type='submit']:hover {
+	background-color: #c0eef2;
+}
+/* CONTACT CSS */
+
+footer {
+	background-color: #181823;
+	color: #c0eef2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+
+footer p {
+	margin: 0;
+	font-size: 1.2em;
+	text-align: center;
+}
