@@ -1,19 +1,19 @@
-/*  */
-/* nav {
-	/* background-color: #181823; */
-/* color: #537fe7; */
-/* } */
+:root {
+	--primary: #c0eef2;
+	--secondary: #537fe7;
+	--tertiary: #181823;
+}
 a .nav-link {
-	color: #537fe7;
+	color: var(--primary);
 }
 input.form-control {
-	background-color: #c0eef2;
-	border-color: #537fe7;
-	color: #181823;
+	background-color: var(--secondary);
+	border-color: var(--primary);
+	color: var(--tertiary);
 }
 /*  */
 .navbar-brand {
-	color: #c0eef2;
+	color: var(--secondary);
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -23,7 +23,7 @@ input.form-control {
 /* NAVBAR CSS */
 
 .body {
-	background-color: #c0eef2;
+	background-color: var(--secondary);
 }
 /* BODY CSS */
 
@@ -44,17 +44,17 @@ input.form-control {
 	transform: translate(-50%, -50%);
 	background-color: transparent;
 	padding: 20px;
-	color: #c0eef2;
+	color: var(--secondary);
 	text-align: center;
 }
 
 #define h3 {
-	color: #537fe7;
+	color: var(--primary);
 	margin-bottom: 20px;
 }
 
 #define button {
-	background-color: #181823;
+	background-color: var(--tertiary);
 	color: #e9f8f9;
 	border: none;
 	padding: 10px 20px;
@@ -65,7 +65,8 @@ input.form-control {
 /* DEFINE CSS */
 #about {
 	text-align: center;
-	background-color: #181823;
+	background-color: var(--tertiary);
+	color: var(--primary);
 	padding: 50px;
 }
 
@@ -74,50 +75,61 @@ input.form-control {
 	height: 200px;
 	border-radius: 50%;
 	margin-bottom: 50px;
+	margin-left: 50%;
+	padding: 20px;
 }
 
-#about h2 {
-	color: #537fe7;
-	margin-bottom: 20px;
+#about h3 {
+	margin-left: 50%;
 }
 
 #about p {
 	color: #e9f8f9;
 	font-size: 16px;
+	margin-left: 50%;
 }
 /* ABOUT CSS */
+
 #services {
-	background-color: #181823;
-	color: #c0eef2;
-	padding: 50px 0;
+	background-color: var(--tertiary);
+	color: var(--secondary);
+	text-align: center;
+}
+#services h2 {
+	background-color: var(--tertiary);
+	color: var(--primary);
+	height: fit-content;
+}
+#services .line-up {
 	display: flex;
+	justify-content: center;
 }
 
 .card {
 	background-color: #e9f8f9;
 	border-radius: 10px;
-	box-shadow: 0px 0px 20px #537fe7;
+	box-shadow: 0px 0px 20px var(--primary);
 	text-align: center;
 	padding: 30px;
-	margin: 20px;
+	margin: 10%;
 }
 
 .card-title {
-	color: #537fe7;
+	color: var(--primary);
 	font-size: 24px;
 	margin-bottom: 20px;
 }
 
 .card-text {
-	color: #181823;
+	color: var(--tertiary);
 	font-size: 16px;
 	margin-bottom: 20px;
 }
 
 .btn-primary {
-	background-color: #537fe7;
+	background-color: var(--primary);
 	border-radius: 20px;
-	color: #c0eef2;
+	color: var(--secondary);
 	padding: 10px 20px;
 	text-decoration: none;
 	border: none;
@@ -125,23 +137,30 @@ input.form-control {
 }
 
 .btn-primary:hover {
-	background-color: #c0eef2;
-	color: #537fe7;
+	background-color: var(--secondary);
+	color: var(--primary);
 	cursor: pointer;
 }
 /* SERVICES CSS */
 #projects {
-	background-color: #181823;
-	color: #c0eef2;
+	background-color: var(--tertiary);
+	color: var(--secondary);
 	align-items: center;
 	text-align: center;
 }
+#projects h2 {
+	color: var(--primary);
+	width: 100%;
+	height: fit-content;
+	margin-bottom: 40px;
+}
+
 .carousel {
 	height: 50rem;
 	width: 70%;
 	margin: 0 auto;
 	overflow: hidden;
-	background-color: #181823;
+	background-color: var(--tertiary);
 	display: flex;
 	vertical-align: middle;
 }
@@ -151,7 +170,7 @@ input.form-control {
 	top: 50%;
 	width: auto;
 	padding: 10px;
-	color: #181823;
+	color: var(--tertiary);
 	font-size: 18px;
 	font-weight: bold;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
@@ -162,11 +181,11 @@ input.form-control {
 	width: 100%;
 	align-items: center;
 	justify-content: center;
-	background-color: #537fe7;
-	color: #181823;
+	background-color: var(--primary);
+	color: var(--tertiary);
 }
 .carousel-caption d-none d-md-block {
-	color: #181823;
+	color: var(--tertiary);
 }
 
 .carousel-control-prev:hover,
@@ -174,8 +193,8 @@ input.form-control {
 	visibility: initial;
 	opacity: 50%;
 	cursor: pointer;
-	color: #c0eef2;
-	background-color: #181823;
+	color: var(--secondary);
+	background-color: var(--tertiary);
 }
 
 .carousel-indicators {
@@ -183,37 +202,37 @@ input.form-control {
 }
 
 .carousel-indicators li {
-	background-color: #c0eef2;
-	border-color: #537fe7;
+	background-color: var(--secondary);
+	border-color: var(--primary);
 }
 
 .carousel-indicators .active {
-	background-color: #537fe7;
+	background-color: var(--primary);
 }
 
 /* PROJECT CSS */
 #contact {
-	background-color: #181823;
+	background-color: var(--tertiary);
 	padding: 50px;
-	color: #537fe7;
+	color: var(--primary);
 	align-items: center;
 	text-align: center;
 	position: relative;
 }
 
 #contact h2 {
-	color: #537fe7;
+	color: var(--primary);
 	width: 100%;
 	height: fit-content;
 	margin-bottom: 40px;
 }
 
 #contact form {
-	background-color: #181823;
+	background-color: var(--tertiary);
 	width: 50%;
 	padding: 40px;
 	border-radius: 10px;
-	box-shadow: 0 0 10px #537fe7;
+	box-shadow: 0 0 10px var(--primary);
 	text-align: left;
 }
 
@@ -225,8 +244,8 @@ input.form-control {
 	padding: 10px;
 	margin-bottom: 20px;
 	font-size: 18px;
-	color: #c0eef2;
-	border: 1px solid #537fe7;
+	color: var(--secondary);
+	border: 1px solid var(--primary);
 	border-radius: 5px;
 	box-sizing: border-box;
 }
@@ -234,7 +253,7 @@ input.form-control {
 #contact input[type='submit'] {
 	width: 100%;
 	padding: 15px;
-	background-color: #537fe7;
+	background-color: var(--primary);
 	color: #e9f8f9;
 	font-size: 18px;
 	border: none;
@@ -243,13 +262,13 @@ input.form-control {
 }
 
 #contact input[type='submit']:hover {
-	background-color: #c0eef2;
+	background-color: var(--secondary);
 }
 /* CONTACT CSS */
 
 footer {
-	background-color: #181823;
-	color: #c0eef2;
+	background-color: var(--tertiary);
+	color: var(--secondary);
 	display: flex;
 	justify-content: center;
 	align-items: center;
