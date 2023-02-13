@@ -211,7 +211,7 @@ a .nav-link {
 }
 
 .card {
-	width: 30%;
+	width: 100%;
 	color: var(--tertiary);
 	box-shadow: 0 4px 8px 0 var(--secondary);
 	border-radius: 5px;
