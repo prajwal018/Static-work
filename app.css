@@ -44,7 +44,7 @@ a .nav-link {
 /* NAVBAR CSS */
 
 .body {
-	background-color: var(--primary);
+	background-color: whitesmoke;
 }
 /* BODY CSS */
 
@@ -93,7 +93,6 @@ a .nav-link {
 /* DEFINE CSS */
 #about {
 	text-align: left;
-	background-color: var(--primary);
 	color: var(--tertiary);
 	padding: 50px;
 	display: flex;
@@ -103,6 +102,8 @@ a .nav-link {
 	text-align: left;
 }
 .aboutme-text h3 {
+	background-color: var(--primary);
+	border-radius: 20px;
 	padding-left: 20px;
 	color: var(--secondary);
 }
@@ -141,7 +142,6 @@ a .nav-link {
 
 #skills {
 	text-align: right;
-	background-color: var(--primary);
 	color: var(--tertiary);
 	padding: 50px;
 	display: flex;
@@ -151,8 +151,10 @@ a .nav-link {
 	text-align: right;
 }
 .skills-text h3 {
+	background-color: var(--primary);
 	padding-right: 20px;
 	color: var(--secondary);
+	border-radius: 20px;
 }
 .skills-text p,
 .skills-text h6,
@@ -188,72 +190,89 @@ a .nav-link {
 /* SKILLS CSS */
 
 #services {
-	background-color: var(--primary);
 	color: var(--secondary);
 	text-align: center;
 	padding: 20px;
 }
 #services h2 {
-	text-align: right;
-	margin-right: 40px;
+	margin: 40px;
+
+	text-align: center;
 	background-color: var(--primary);
 	color: var(--secondary);
 	height: fit-content;
+	border-radius: 20px;
 }
 #services .line-up {
 	display: flex;
 	justify-content: center;
+	height: 150px;
+	width: 100%;
 }
 
 .card {
-	background-color: var(--primary);
-	border-radius: 10px;
-	box-shadow: 0px 0px 20px var(--secondary);
+	width: 30%;
+	color: var(--tertiary);
+	box-shadow: 0 4px 8px 0 var(--secondary);
+	border-radius: 5px;
+	padding-top: 20px;
+	margin: 10px;
 	text-align: center;
-	padding: 30px;
-	margin: 10%;
+}
+.card .bi-check-circle-fill {
+	font-size: 60px;
+	width: 10px;
+	border-radius: 20px;
+	color: var(--secondary);
+	position: absolute;
+	margin-left: 20px;
 }
 
 .card-title {
-	color: var(--primary);
-	font-size: 24px;
-	margin-bottom: 20px;
+	text-align: left;
+	margin-left: 20%;
+	padding-left: 10px;
+	width: 100%;
+	position: absolute;
 }
 
 .card-text {
-	color: var(--tertiary);
-	font-size: 16px;
-	margin-bottom: 20px;
+	text-align: left;
+	margin-top: 30px;
+	margin-left: 20%;
+	padding-left: 10px;
+	position: absolute;
+	width: 60%;
 }
 
-.btn-primary {
-	background-color: var(--tertiary);
-	border-radius: 20px;
-	color: var(--secondary);
-	padding: 10px 20px;
+.card .btn {
+	position: absolute;
+	right: 0;
+	top: auto;
+	font-size: 50px;
 	text-decoration: none;
-	border: none;
 	transition: all 0.3s ease-in-out;
 }
 
-.btn-primary:hover {
+/* .card .btn:hover {
 	background-color: var(--secondary);
 	color: var(--primary);
 	cursor: pointer;
-}
+} */
 /* SERVICES CSS */
 #projects {
-	background-color: var(--primary);
 	color: var(--secondary);
 	padding: 20px;
 	text-align: center;
 	width: 100%;
 }
 #projects h2 {
+	margin: 40px;
+	text-align: center;
+	background-color: var(--primary);
 	color: var(--secondary);
-	width: 100%;
 	height: fit-content;
-	padding: 20px;
+	border-radius: 20px;
 }
 
 .carousel {
@@ -273,15 +292,14 @@ a .nav-link {
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-.carousel-item {
+.carousel-inner {
 	height: fit-content;
 	align-items: center;
-	background-color: var(--primary);
 	color: var(--secondary);
 	margin: auto;
 }
-.carousel-caption d-none d-md-block {
-	color: var(--secondary);
+.carousel-caption {
+	color: var(--tertiary);
 }
 
 .carousel-control-prev:hover,
@@ -306,7 +324,6 @@ a .nav-link {
 
 /* PROJECT CSS */
 #contact {
-	background-color: var(--primary);
 	padding: 50px;
 	color: var(--tertiary);
 	text-align: center;
@@ -314,17 +331,19 @@ a .nav-link {
 }
 
 #contact h2 {
+	text-align: center;
+	background-color: var(--primary);
 	color: var(--secondary);
-	width: 100%;
 	height: fit-content;
+	border-radius: 20px;
 	margin: 40px;
 }
 
 #contact form {
-	background-color: var(--primary);
+	color: var(--secondary);
 	width: 50%;
 	padding: 40px;
-	border-radius: 50px;
+	border-radius: 10px;
 	box-shadow: 0 0 10px var(--secondary);
 	text-align: left;
 	font-weight: bold;
@@ -337,7 +356,7 @@ a .nav-link {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 10;
-	color: var(--secondary);
+	border-color: var(--secondary);
 	border-radius: 40px;
 	/* box-sizing: border-box; */
 	resize: none;
