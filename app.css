@@ -126,8 +126,7 @@ a .nav-link {
 	height: 300px;
 	border-radius: 50%;
 	margin-bottom: 20px;
-	padding: 20px;
-	box-shadow: 0px 0px 10px var(--tertiary);
+	box-shadow: 0px 0px 20px var(--secondary);
 }
 .aboutme-pic h3 {
 	color: var(--secondary);
@@ -170,13 +169,13 @@ a .nav-link {
 	color: var(--tertiary);
 }
 
-.skills-pic img {
-	width: 300px;
+.skills-pic .video {
+	width: 80%;
 	height: 300px;
-	border-radius: 50%;
+	border-radius: 5px;
 	margin-bottom: 20px;
-	padding: 20px;
-	box-shadow: 0px 0px 10px var(--tertiary);
+	padding: 1px;
+	box-shadow: 0px 0px 20px var(--secondary);
 }
 .skills-pic h3 {
 	color: var(--secondary);
