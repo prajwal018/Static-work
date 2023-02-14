@@ -89,73 +89,90 @@
 		</nav>
 	</header>
 	<body id="body">
-		<main>
-			<section id="define">
-				<img src="https://picsum.photos/720/1080" alt="Random Image" />
-				<div class="image-overlay">
-					<h3>Hi! I'm Prajwal Kuchewar -</h3>
-					<h4>Software Engineer</h4>
-					<p style="font-size: x-small">
-						Proactive student eager to contribute to the coding community
-						through hard work and dedication to quality. Seeking to use
-						exceptional communication skills as a team member/software
-						developer. Proficiency in Python, Java, Data Structures, and
-						Algorithms. Passionate about web development and user experience
-						design.
-					</p>
-					<div class="contact">
-						<h6 style="margin-right: 107px; font-weight: bold">Email:</h6>
-						<h6 style="font-weight: bold">Linked In:</h6>
-					</div>
-					<div class="contact" style="cursor: pointer">
-						<p style="margin-right: 20px" href="prajwalkuchewar3@gmail.com">
-							prajwalkuchewar3@gmail.com
-						</p>
-						<p>
-							<a href="https://www.linkedin.com/in/prajwal018">
-								linkedin.com/in/prajwal018</a
-							>
-						</p>
-					</div>
-
-					<button
-						type="button"
-						class="btn btn-dark"
-						style="background-color: #537fe7"
+		<section id="define">
+			<img src="https://picsum.photos/720/1080" alt="Random Image" />
+			<div class="image-overlay">
+				<h3>Hi! I'm Prajwal Kuchewar -</h3>
+				<h4>Software Engineer</h4>
+				<p style="font-size: x-small">
+					Proactive student eager to contribute to the coding community through
+					hard work and dedication to quality. Seeking to use exceptional
+					communication skills as a team member/software developer. Proficiency
+					in Python, Java, Data Structures, and Algorithms. Passionate about web
+					development and user experience design.
+				</p>
+				<div class="mail-link">
+					<h5>Email:</h5>
+					<h5>Linked In:</h5>
+				</div>
+				<div class="contact" style="cursor: pointer">
+					<p href="prajwalkuchewar3@gmail.com">prajwalkuchewar3@gmail.com</p>
+					<a href="https://www.linkedin.com/in/prajwal018">
+						<p>linkedin.com/in/prajwal018</p></a
 					>
-						Download CV
-					</button>
-					<button type="button" class="btn btn-dark">Hire Me Now</button>
 				</div>
-			</section>
 
+				<button
+					type="button"
+					class="btn btn-dark"
+					style="background-color: #537fe7"
+				>
+					Download CV
+				</button>
+				<button type="button" class="btn btn-dark">Hire Me Now</button>
+			</div>
+		</section>
+		<main class="content-wrap">
+			<h2>Things I like to do</h2>
 			<section id="services">
-				<h2>Things I like to do</h2>
-				<div class="line-up">
-					<div class="card">
-						<i class="bi bi-check-circle-fill" style="color: #537fe7"></i>
-						<h5 class="card-title">Web Development</h5>
-						<p class="card-text">Develop fullstack web apps and pages.</p>
-						<a href="#" class="btn"><i class="bi bi-chevron-right"></i></a>
+				<!-- <div class="card"> -->
+				<div class="a-box">
+					<div class="img-container">
+						<div class="img-inner">
+							<div class="inner-skew">
+								<img src="https://picsum.photos/230/200" />
+							</div>
+						</div>
 					</div>
-
-					<div class="card">
-						<i class="bi bi-check-circle-fill" style="color: #c0eef2"></i>
-						<h5 class="card-title">Software Development</h5>
-						<p class="card-text">
-							Designs, develops, and maintains software systems and applications
-						</p>
-						<a href="#" class="btn"><i class="bi bi-chevron-right"></i></a>
-					</div>
-					<div class="card">
-						<i class="bi bi-check-circle-fill" style="color: #181823"></i>
-						<h5 class="card-title">UX Design</h5>
-						<p class="card-text">Creative websites for you</p>
-						<a href="#" class="btn"><i class="bi bi-chevron-right"></i></a>
+					<div class="text-container">
+						<h3>Software Development</h3>
+						<div>
+							This a demo experiment to skew image container. It looks good.
+						</div>
 					</div>
 				</div>
+				<div class="a-box">
+					<div class="img-container">
+						<div class="img-inner">
+							<div class="inner-skew">
+								<img src="https://picsum.photos/230/200" />
+							</div>
+						</div>
+					</div>
+					<div class="text-container">
+						<h3>UX Design</h3>
+						<div>
+							This a demo experiment to skew image container. It looks good.
+						</div>
+					</div>
+				</div>
+				<div class="a-box">
+					<div class="img-container">
+						<div class="img-inner">
+							<div class="inner-skew">
+								<img src="https://picsum.photos/230/200" />
+							</div>
+						</div>
+					</div>
+					<div class="text-container">
+						<h3>Web Development</h3>
+						<div>
+							This a demo experiment to skew image container. It looks good.
+						</div>
+					</div>
+				</div>
+				<!-- </div> -->
 			</section>
-
 			<section id="about">
 				<!-- <h2>About Me</h2> -->
 				<div class="aboutme-text">
@@ -371,55 +388,37 @@
 			</section>
 
 			<section id="contact">
-				<h2>Get in Touch</h2>
-				<form>
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" required />
-					<br /><br />
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required />
-					<br /><br />
-					<label for="message">Message:</label>
-					<textarea id="message" name="message" required></textarea>
-					<br /><br />
-					<input type="submit" value="Clear" class="clear" />
-					<input type="submit" value="Submit" />
-				</form>
+				<ul class="list-nav">
+					<h5><a href="#">Home</a></h5>
+					<h5><a href="#">Services</a></h5>
+					<h5><a href="#">About</a></h5>
+					<h5><a href="#">Contact</a></h5>
+				</ul>
+				<h2>Let's Talk!</h2>
+				<div class="myinfo">
+					<h5>
+						<i class="bi bi-telephone-inbound-fill"></i><br /><br />
+						Phone Me: <br />
+						<div class="small">+918 766 813 856</div>
+					</h5>
+					<h5>
+						<i class="bi bi-envelope-fill"></i><br /><br />
+						Email Me: <br />
+						<div class="small">+918 766 813 856</div>
+					</h5>
+					<h5>
+						<i class="bi bi-linkedin"></i><br /><br />
+						Follow Me: <br />
+						<div class="small">+918 766 813 856</div>
+					</h5>
+				</div>
+				<a href="contact.html"><button>Hire Me</button></a>
 			</section>
 		</main>
 
 		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<h5>About Us</h5>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in
-							lacinia leo.
-						</p>
-					</div>
-					<div class="col-md-4">
-						<h5>Links</h5>
-						<ul class="list-unstyled">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</div>
-					<div class="col-md-4">
-						<h5>Contact</h5>
-						<p>
-							123 Main Street<br />
-							Anytown, USA 12345
-						</p>
-						<p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
-						<p>Phone: (555) 555-5555</p>
-					</div>
-				</div>
-				<div class="copyright">
-					<p>&copy; 2023 Example Inc.</p>
-				</div>
+			<div class="copyright">
+				<p>&copy; 2023 Prajwal Inc.</p>
 			</div>
 		</footer>
 
