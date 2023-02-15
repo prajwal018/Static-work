@@ -5,31 +5,170 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="app.css" />
+		<link rel="stylesheet" href="contact.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+		/>
 	</head>
-	<body>
-		<div class="contact">
-			<form>
-				<!-- <label for="email">Email:</label> -->
-				<input
-					type="email"
-					id="email"
-					name="email"
-					required
-					placeholder="Email"
-				/>
-				<br /><br />
-				<!-- <label for="message">Message:</label> -->
-				<textarea
-					id="message"
-					name="message"
-					required
-					placeholder="Message"
-				></textarea>
-				<br /><br />
-				<input type="submit" value="Clear" class="clear" />
-				<input type="submit" value="Submit" />
-			</form>
+	<body class="body">
+		<header>
+			<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+				<div class="container-fluid">
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarToggleExternalContent"
+						aria-controls="navbarToggleExternalContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+						onclick="toggleNavbar()"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="navbar-brand" href="#">PRAJWAL.</a>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									aria-current="page"
+									href="#"
+									id="home-link"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="link-link">Link</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Dropdown
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled">Disabled</a>
+							</li>
+						</ul>
+						<form class="d-flex" role="search">
+							<input
+								class="form-control me-2"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+							/>
+							<button class="btn btn-outline-success" type="submit">
+								<i class="bi bi-search"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section id="define">
+			<h1>CONTACTS</h1>
+			<ul class="list-nav">
+				<a href="index.html" style="padding: 5px; color: #c0eef2"
+					><h6>Home</h6></a
+				>
+				<h4 style="padding: 10px"><i class="bi bi-dash-lg"></i></h4>
+
+				<a href="contact.html" style="padding-top: 5px; color: #537fe7">
+					<h6>Contact</h6></a
+				>
+			</ul>
+		</section>
+		<div class="content-wrap">
+			<section id="quick-support">
+				<h2>Quick Support</h2>
+				<p>
+					These are the words we live by in everything we do. Every story we
+					tell, every brand <br />
+					we build, and every interation we create
+				</p>
+				<div class="myinfo">
+					<h5>
+						<i class="bi bi-telephone-inbound-fill"></i>
+						Phone Me 24/7: <br />
+						<div class="small">+918 766 813 856</div>
+					</h5>
+					<h5>
+						<i class="bi bi-envelope-fill"></i>
+						Email Me 24/7: <br />
+						<div class="small">+918 766 813 856</div>
+					</h5>
+					<h5 style="color: var(#537fe7)">
+						<i class="bi bi-linkedin"></i>
+						Follow Me: <br />
+						<div class="small">+918 766 813 856</div>
+					</h5>
+				</div>
+			</section>
+			<section id="contact">
+				<h2>Get in Touch</h2>
+				<form>
+					<!-- <label for="name">Name:</label> -->
+					<input
+						type="name"
+						id="name"
+						name="name"
+						required
+						placeholder="Name"
+					/>
+					<br /><br />
+					<!-- <label for="email">Email:</label> -->
+					<input
+						type="email"
+						id="email"
+						name="email"
+						required
+						placeholder="Email"
+					/>
+					<br /><br />
+					<!-- <label for="message">Message:</label> -->
+					<textarea
+						id="message"
+						name="message"
+						required
+						placeholder="Message"
+					></textarea>
+					<input type="submit" value="Leave a comment" />
+				</form>
+			</section>
 		</div>
+
+		<footer>
+			<div class="copyright">
+				<p>&copy; 2023 Prajwal Inc.</p>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+		<script src="contact.js"></script>
 	</body>
 </html>
