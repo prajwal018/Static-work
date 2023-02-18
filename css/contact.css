@@ -101,14 +101,14 @@ a .nav-link {
 	border-radius: 5px;
 }
 
-#contact h2,
+#comment h2,
 #quick-support h5 {
 	text-align: left;
 	margin: 10px;
 	padding: 20px;
 	border-radius: 5px;
 }
-#contact {
+#comment {
 	width: 100%;
 	background-color: var(--primary);
 	color: var(--primary);
@@ -116,19 +116,19 @@ a .nav-link {
 	text-align: left;
 	border: none;
 }
-#contact form {
+#comment form {
 	color: var(--secondary);
 	border-radius: 5px;
 	width: 100%;
 	text-align: left;
 }
 
-#contact label,
-#contact input[type='name'],
-#contact input[type='text'],
-#contact input[type='email'],
-#contact input[type='submit'],
-#contact textarea {
+#comment label,
+#comment input[type='name'],
+#comment input[type='text'],
+#comment input[type='email'],
+#comment input[type='submit'],
+#comment textarea {
 	width: 90%;
 	padding: 10px;
 	border-radius: 5px;
@@ -139,7 +139,7 @@ a .nav-link {
 	overflow: hidden;
 }
 
-#contact input[type='submit'] {
+#comment input[type='submit'] {
 	width: fit-content;
 	font-weight: bold;
 	background-color: var(--secondary);
@@ -150,11 +150,54 @@ a .nav-link {
 	padding: 15px 30px;
 }
 
-#contact input[type='submit']:hover {
+#comment input[type='submit']:hover {
 	opacity: 20%;
 	background-color: var(--secondary);
 }
+/*  */
+#contact {
+	width: 100%;
+	background-color: var(--tertiary);
+	color: var(--primary);
+	padding: 20px;
+	text-align: center;
+}
 
+#contact h5 {
+	text-align: center;
+	margin: 30px;
+}
+
+#contact i {
+	font-size: 30px;
+	margin: 20px;
+}
+.small {
+	font-weight: lighter;
+	text-align: center;
+	margin: 10px;
+	opacity: 80%;
+}
+#contact button {
+	width: 150px;
+	height: 50px;
+	background-color: var(--secondary);
+	color: var(--primary);
+	border-radius: 5px;
+}
+#contact h2 {
+	text-align: center;
+}
+
+#contact a {
+	color: var(--secondary);
+}
+
+#contact .myinfo {
+	display: flex;
+	justify-content: center;
+}
+/*  */
 footer .copyright {
 	text-align: center;
 	background-color: var(--tertiary);

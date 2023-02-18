@@ -375,7 +375,6 @@ a .nav-link {
 	width: 100%;
 	background-color: var(--tertiary);
 	color: var(--primary);
-	border-radius: 5px;
 	padding: 20px;
 	text-align: center;
 }
@@ -384,10 +383,7 @@ a .nav-link {
 	text-align: center;
 	margin: 30px;
 }
-.list-nav {
-	display: flex;
-	justify-content: center;
-}
+
 #contact i {
 	font-size: 30px;
 	margin: 20px;
@@ -411,10 +407,6 @@ a .nav-link {
 
 #contact a {
 	color: var(--secondary);
-}
-
-#contact p {
-	margin-bottom: 0;
 }
 
 #contact .myinfo {
